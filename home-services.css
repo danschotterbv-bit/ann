@@ -1,0 +1,19 @@
+@font-face{font-family:'Care Display';src:url('assets/fonts/cormorant-garamond-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
+/* Fine green frames and a circular arrow above each care title. */
+.support-section .service-grid{gap:22px}
+.support-section .service-card{background:#fff;border:1px solid #94bda0;border-radius:8px;min-height:380px;padding:25px 25px 26px;box-shadow:none;transition:border-color .2s,transform .2s,background .2s}
+.support-section .service-card::before{content:none}
+.support-section .service-card .service-card-top{display:flex;justify-content:flex-end;margin-bottom:23px}
+.support-section .service-card .service-arrow{display:flex;align-items:center;justify-content:center;width:38px;height:38px;color:#00843c;background:#edf5e9;border:1px solid #b9d4b9;border-radius:50%;transition:background .2s,color .2s,border-color .2s}
+.support-section .service-card .service-arrow .icon{width:19px;height:19px;stroke-width:1.35;transition:transform .2s}
+.support-section .service-card h3{font-family:'Care Display',Georgia,serif;font-size:30px;font-weight:500;line-height:1.1;letter-spacing:-.6px;color:#006f32;text-decoration:none;margin:0 0 20px;min-height:66px}
+.support-section .service-card p{font-size:14px;line-height:1.85;color:#52665a;margin:0 0 27px}
+.support-section .service-card .service-link-hint{display:block;margin-top:auto;color:#007535;font-size:12px;font-weight:500}
+.support-section .service-card:hover,.support-section .service-card:focus-visible{background:#fbfdf9;border-color:#00843c;box-shadow:none;transform:translateY(-3px)}
+.support-section .service-card:hover h3,.support-section .service-card:focus-visible h3{color:#005e2c;text-decoration:none}
+.support-section .service-card:hover .service-arrow,.support-section .service-card:focus-visible .service-arrow{background:#00843c;color:#fff;border-color:#00843c}
+.support-section .service-card:hover .service-arrow .icon{transform:translate(1px,-1px)}
+.support-section .service-card:focus-visible{outline:2px solid #00843c;outline-offset:5px}
+@media(max-width:1100px){.support-section .service-grid{gap:22px}.support-section .service-card{min-height:340px}.support-section .service-card h3{min-height:0}}
+@media(max-width:600px){.support-section .service-grid{gap:18px}.support-section .service-card{min-height:0;padding:23px 25px 27px}.support-section .service-card .service-card-top{margin-bottom:19px}.support-section .service-card h3{font-size:32px;margin-bottom:17px}.support-section .service-card p{font-size:15px;margin-bottom:23px}}
+@media(prefers-reduced-motion:reduce){.support-section .service-card:hover,.support-section .service-card:focus-visible,.support-section .service-card:hover .service-arrow .icon{transform:none}.support-section .service-card,.support-section .service-arrow,.support-section .service-arrow .icon{transition:none}}
