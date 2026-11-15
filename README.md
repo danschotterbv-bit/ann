@@ -32,7 +32,7 @@ De HTML-bestanden zijn de actuele bron. Er is geen pagina-generator nodig. Houd 
 
 ## Download en hosting
 
-`ann-website.zip` bevat de vorige export. De losse HTML- en CSS-bestanden bevatten ook de nieuwste aanpassingen aan Thuisverpleging; deze moeten nog in een nieuwe ZIP en Sites-publicatie worden opgenomen. Pak deze uit en plaats de volledige inhoud op een statische webhosting met HTTPS. GitHub bevat de bronbestanden; het bijwerken van deze repository wijzigt de Sites-publicatie niet automatisch.
+`ann-website.zip` en de losse bronbestanden bevatten de nieuwste aanpassingen aan Thuisverpleging. Deze versie is nog niet op Sites gepubliceerd. Pak deze uit en plaats de volledige inhoud op een statische webhosting met HTTPS. GitHub bevat de bronbestanden; het bijwerken van deze repository wijzigt de Sites-publicatie niet automatisch.
 
 ## Contactformulier
 
