@@ -1,0 +1,29 @@
+/* Three evenly spaced, softly frosted core values. */
+.home-hero .hero-values{left:0;right:0;bottom:32px;width:min(var(--width),calc(100% - 96px));margin-inline:auto}
+.home-hero .hero-values .values-grid{width:100%;max-width:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.home-hero .hero-values .values-grid>div{transform:none;position:relative;justify-self:center;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:13px;width:min(100%,310px);min-height:76px;padding:20px 18px;background:rgba(255,255,255,.66);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.75);border-radius:9px;box-shadow:0 4px 24px rgba(30,65,37,.035)}
+.home-hero .hero-values .icon{display:block;position:static;width:22px;height:22px;margin:0;color:var(--green);stroke-width:1.25}
+.home-hero .hero-values h3,.home-hero .hero-values .values-grid>div:nth-child(2) h3{max-width:none;margin:0;font-family:Manrope,var(--font);font-size:16px;font-weight:400;line-height:1.5;letter-spacing:.05px;text-align:center;color:#006e32}
+@media(max-width:1250px){.home-hero .hero-values{width:calc(100% - 64px)}}
+@media(max-width:800px){.home-hero .hero-values{bottom:24px}.home-hero .hero-values .values-grid{gap:14px}.home-hero .hero-values .values-grid>div{flex-direction:column;gap:9px;min-height:98px;padding:14px 10px}.home-hero .hero-values h3,.home-hero .hero-values .values-grid>div:nth-child(2) h3{font-size:14px;line-height:1.45}}
+@media(max-width:600px){.home-hero .hero-values{width:calc(100% - 40px);bottom:20px}.home-hero .hero-values .values-grid{gap:9px}.home-hero .hero-values .values-grid>div{min-height:98px;padding:13px 7px;gap:8px;border-radius:7px}.home-hero .hero-values h3,.home-hero .hero-values .values-grid>div:nth-child(2) h3{font-size:12px;letter-spacing:0}.home-hero .hero-values .icon{width:20px;height:20px}}
+@media(max-width:360px){.home-hero .hero-values{width:calc(100% - 30px)}.home-hero .hero-values .values-grid{gap:7px}}
+
+.home-hero .hero-values .values-grid>div:nth-child(2){transform:none}
+
+/* On small screens the care photo forms one hero with the text. */
+@media(max-width:800px){
+.home-hero{display:block;position:relative;isolation:isolate;overflow:hidden;background:#f2f2e9}
+.home-hero .hero-background{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:80% center}
+.home-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.89) 38%,rgba(255,255,255,.52) 65%,rgba(255,255,255,.10) 100%);pointer-events:none}
+.home-hero .hero-content{min-height:660px;justify-content:flex-start;padding-top:40px;padding-bottom:200px}
+.home-hero .hero-copy{width:100%;max-width:600px}
+.home-hero .hero-values{bottom:25px}
+}
+@media(max-width:600px){.home-hero .hero-content{padding-top:35px;min-height:650px}.home-hero .hero-values{bottom:22px}}
+
+@media(max-width:600px){
+.home-hero .hero-actions{display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-start;gap:8px}
+.home-hero .hero-actions .button{width:auto;flex:0 0 auto;min-height:44px;white-space:nowrap;font-size:11px;padding:11px 8px;gap:6px;justify-content:center}
+.home-hero .hero-actions .button .icon{width:14px;height:14px}
+}

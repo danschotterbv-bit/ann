@@ -1,0 +1,57 @@
+/* Light navigation; page content retains the original design. */
+.utility-bar{background:#f0f4ed;color:#526656;border-bottom:1px solid #dce4dc}
+.utility-bar>.container{border-bottom:0}
+.utility-bar p,.utility-bar a{color:#526656;font-size:10px}
+.utility-bar :focus-visible{outline-color:#00843c}
+.site-header{background:#fcfcf9;color:#34493c;border-bottom:1px solid #dce4dc}
+.site-header .header-inner{height:94px;gap:28px}
+.site-header .brand img{width:133px}
+.site-header .main-nav{gap:18px;background:#fcfcf9}
+.site-header .main-nav>a,.site-header .main-nav>a.active{font-size:11px;color:#34493c;font-weight:400}
+.site-header .main-nav>a.active{color:#00843c}
+.site-header .main-nav>a::after{background:#00843c}
+.site-header .header-actions{gap:10px}
+.site-header .header-instagram{color:#00843c}
+.site-header .header-instagram:hover{outline-color:#00843c}
+.site-header .header-phone,.site-header .header-phone:hover{background:transparent;color:#00843c;border:1px solid #becfbe;border-radius:3px;font-size:11px;padding:10px 13px}
+.site-header .menu-toggle>span{background:#00843c}
+.site-header :focus-visible{outline-color:#00843c}
+.site-header ::selection,.utility-bar ::selection{background:#dcebdd;color:#263b30}
+@media(max-width:1200px){.site-header .main-nav{border-color:#dce4dc}.site-header .main-nav>a{border-bottom-color:#dce4dc;font-size:16px}.site-header .main-nav>a.active{font-size:16px}}
+@media(max-width:600px){.utility-bar>.container{min-height:29px}.site-header .header-inner{height:76px;gap:12px}.site-header .brand img{width:110px}.site-header .header-instagram{display:none}.site-header .header-phone,.site-header .header-phone:hover{font-size:10px;padding:8px 10px;min-height:38px}}
+
+/* More legible navigation, with a quiet button treatment. */
+.site-header .header-inner{width:min(var(--width),calc(100% - 96px));gap:20px}
+.site-header .brand img{width:124px}
+.site-header .main-nav{gap:4px}
+.site-header .main-nav>a,.site-header .main-nav>a.active{font-size:14px;font-weight:600;line-height:1.4;letter-spacing:-.02em;padding:12px 10px;border-radius:5px;color:#263b30;transition:background .18s,color .18s}
+.site-header .main-nav>a::after{display:none}
+.site-header .main-nav>a.active{background:#e7f0e4;color:#006c32;text-decoration:none}
+.site-header .main-nav>a:hover,.site-header .main-nav>a:focus-visible{background:#edf3e9;color:#006c32}
+.site-header .header-phone,.site-header .header-phone:hover{font-size:12px;min-height:44px;padding:11px 14px;border-radius:5px;font-weight:600}
+@media(min-width:1201px) and (max-width:1280px){
+.site-header .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:38px;height:42px;padding:7px;background:none;border:0}
+.site-header .menu-toggle>span{width:22px;height:1px;background:#00843c}
+.site-header .main-nav{display:none;position:absolute;top:100%;left:0;right:0;margin:0;padding:15px 32px 23px;border-block:1px solid #dce4dc;max-height:calc(100dvh - 150px);overflow-y:auto}
+.site-header .main-nav.open{display:flex;flex-direction:column;align-items:stretch}
+}
+@media(max-width:1280px){
+.site-header .main-nav{gap:6px}
+.site-header .main-nav>a,.site-header .main-nav>a.active{font-size:17px;padding:13px 16px;border-bottom:0;text-decoration:none}
+}
+@media(max-width:600px){
+.site-header .header-inner{width:calc(100% - 40px);gap:12px}
+.site-header .brand img{width:110px}
+.site-header .header-phone,.site-header .header-phone:hover{font-size:12px;padding:9px 12px;min-height:42px}
+}
+@media(prefers-reduced-motion:reduce){.site-header .main-nav>a{transition:none}}
+
+/* Match the utility bar’s container at every screen width. */
+@media(max-width:1250px){.site-header .header-inner{width:calc(100% - 64px)}}
+@media(max-width:600px){.site-header .header-inner{width:calc(100% - 40px)}}
+@media(max-width:360px){.site-header .header-inner{width:calc(100% - 30px)}}
+
+/* Solid call button in the navigation. */
+.site-header .header-phone,.site-header .header-phone:hover{background:#00843c;color:#fff;border-color:#00843c}
+
+@media(max-width:600px){.site-header .header-phone{display:none}}

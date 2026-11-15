@@ -1,0 +1,8 @@
+ANN THUISVERPLEGING
+
+Pak deze volledige ZIP uit in een map.
+Dubbelklik daarna op index.html om de website in uw browser te openen.
+Houd alle HTML-bestanden, styles.css, app.js en de map assets bij elkaar.
+De tabbladen openen elk een aparte pagina.
+Het contactformulier bereidt een e-mail voor; u verzendt die zelf.
+Er is niets automatisch online geplaatst.
